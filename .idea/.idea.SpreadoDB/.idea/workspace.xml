@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="12f9dddd-e22d-433d-b717-cfa26bd79dab" name="Default Changelist" comment="Successful basic operations with unit testing">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.SpreadoDB/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.SpreadoDB/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.SpreadoDB/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.SpreadoDB/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.SpreadoDB/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.SpreadoDB/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Spreadsheet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Spreadsheet.cs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Projects/SpreadoDB/SpreadoDB/SpreadoDBLib/Spreadsheet/Spreadsheet.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/SpreadoDBLib/Class1.cs" />
+        <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Identifiers/IdentifierType.cs" />
+        <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Cells/ICell.cs" />
+        <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/CellContainer.cs" />
+        <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Identifiers/IContainerIdentifier.cs" />
+        <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Identifiers/ContainerIdentifier.cs" />
+        <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/StorageForm.cs" />
+        <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Cells/SimpleCell.cs" />
+        <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Cells/NumericCell.cs" />
+        <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Cells/IntegerCell.cs" />
+        <option value="$PROJECT_DIR$/SpreadoDBLibTest/UnitTest1.cs" />
+        <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Spreadsheet.cs" />
+        <option value="$PROJECT_DIR$/SpreadoDBLibTest/SpreadsheetBasicTestings.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1h7Z1Ampp5D0S8IsxdMhE16rLDO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="12f9dddd-e22d-433d-b717-cfa26bd79dab" name="Default Changelist" comment="" />
+      <created>1599363875984</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599363875984</updated>
+      <workItem from="1599363878929" duration="4574000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial constructs">
+      <created>1599365390816</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599365390816</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial constructs">
+      <created>1599379757361</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1599379757361</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Successful basic operations with unit testing">
+      <created>1599379841653</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599379841653</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Successful basic setup with unit testing" />
+    <MESSAGE value="Initial constructs" />
+    <MESSAGE value="Successful basic operations with unit testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Successful basic operations with unit testing" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1599379866887">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599379866887" />
+    <state x="552" y="252" key="Rider.ProjectTemplateDialog.Size" timestamp="1599365423837">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1040@0.0.1920.1040" timestamp="1599365423837" />
+    <state x="670" y="210" key="RiderGenerateDialog" timestamp="1599365061327">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="670" y="210" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599365061327" />
+    <state x="789" y="241" key="RollbackChangesDialog" timestamp="1599380671737">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="789" y="241" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599380671736" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1599364747859">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599364747859" />
+  </component>
+</project>
