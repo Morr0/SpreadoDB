@@ -10,14 +10,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12f9dddd-e22d-433d-b717-cfa26bd79dab" name="Default Changelist" comment="Successful basic operations with unit testing">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SpreadoDB/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SpreadoDB/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SpreadoDB/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SpreadoDB/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/CellContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/CellContainer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Cells/ICell.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Cells/IntegerCell.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Cells/SimpleCell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Cells/SimpleCell.cs" afterDir="false" />
+    <list default="true" id="12f9dddd-e22d-433d-b717-cfa26bd79dab" name="Default Changelist" comment="Rewrites">
       <change beforePath="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Spreadsheet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Spreadsheet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/SpreadsheetConfigurations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/SpreadsheetConfigurations.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SpreadoDBLibTest/SpreadsheetBasicTestings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SpreadoDBLibTest/SpreadsheetBasicTestings.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,15 +35,15 @@
         <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/StorageForm.cs" />
         <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Cells/NumericCell.cs" />
         <option value="$PROJECT_DIR$/SpreadoDBLibTest/UnitTest1.cs" />
-        <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/SpreadsheetConfigurations.cs" />
         <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Identifiers/ContainerIdentifier.cs" />
         <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Cells/ICell.cs" />
         <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Cells/Cell.cs" />
         <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Cells/IntegerCell.cs" />
         <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Cells/SimpleCell.cs" />
         <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/CellContainer.cs" />
-        <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Spreadsheet.cs" />
         <option value="$PROJECT_DIR$/SpreadoDBLibTest/SpreadsheetBasicTestings.cs" />
+        <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Spreadsheet.cs" />
+        <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/SpreadsheetConfigurations.cs" />
       </list>
     </option>
   </component>
@@ -84,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599363875984</updated>
       <workItem from="1599363878929" duration="7041000" />
-      <workItem from="1599470534329" duration="1780000" />
+      <workItem from="1599470534329" duration="2537000" />
     </task>
     <task id="LOCAL-00001" summary="Initial constructs">
       <created>1599365390816</created>
@@ -107,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599379841653</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Rewrites">
+      <created>1599472325683</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1599472325683</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,7 +134,8 @@
     <MESSAGE value="Successful basic setup with unit testing" />
     <MESSAGE value="Initial constructs" />
     <MESSAGE value="Successful basic operations with unit testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Successful basic operations with unit testing" />
+    <MESSAGE value="Rewrites" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rewrites" />
   </component>
   <component name="WindowStateProjectService">
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1599379866887">

@@ -38,27 +38,6 @@ namespace SpreadoDBLibTest
             // Assert
             Assert.Equal(cell, spreadsheet.GetCell(containerIdentifier, 0));
         }
-        
-        [Fact]
-        public void SpreadsheetShouldNotAllowDuplicateNamesOfContainersShouldThrow()
-        {
-            // Arrange
-            Spreadsheet spreadsheet = new Spreadsheet();
-            Spreadsheet spreadsheet2 = new Spreadsheet(new SpreadsheetConfigurations
-            {
-                AllowDuplicateContainerNames = true
-            });
-            ContainerIdentifier containerIdentifier1 = new ContainerIdentifier("A");
-            ContainerIdentifier containerIdentifier2 = new ContainerIdentifier("A");
-
-            // Act & Act I
-            Assert.Throws<DuplicateNameException>(() 
-                => spreadsheet.AddContainers(containerIdentifier1, containerIdentifier2));
-            
-            // Should not throw
-            spreadsheet2.AddContainers(containerIdentifier1, containerIdentifier2);
-            
-        }
 
         [Fact]
         public void SpreadsheetShouldAllowEditingCellAfterPuttingAValueShouldPass()

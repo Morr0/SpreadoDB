@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.Immutable;
-using System.Collections.ObjectModel;
-using System.Data;
+﻿using System.Collections.Generic;
 using SpreadoDBLib.Spreadsheet.Cells;
 using SpreadoDBLib.Spreadsheet.Identifiers;
 
@@ -18,8 +14,6 @@ namespace SpreadoDBLib.Spreadsheet
         // Shortcut to fetch any of the above
         private Dictionary<ContainerIdentifier, CellContainer> cells;
 
-        private HashSet<string> _containerNames;
-
         public Spreadsheet(SpreadsheetConfigurations configurations = null)
         {
             configurations ??= new SpreadsheetConfigurations();
@@ -27,16 +21,11 @@ namespace SpreadoDBLib.Spreadsheet
 
             if (configurations.StorageForm == StorageForm.ROW)
             {
-                cells = rows = new Dictionary<ContainerIdentifier, CellContainer>();
+                cells = rows = new Dictionary<ContainerIdentifier, CellContainer>(configurations.InitialNoContainer);
             }
             else
             {
-                cells = columns = new Dictionary<ContainerIdentifier, CellContainer>();
-            }
-
-            if (!configurations.AllowDuplicateContainerNames)
-            {
-                _containerNames = new HashSet<string>();
+                cells = columns = new Dictionary<ContainerIdentifier, CellContainer>(configurations.InitialNoContainer);
             }
         }
 
@@ -59,29 +48,9 @@ namespace SpreadoDBLib.Spreadsheet
         
         public void AddContainers(params ContainerIdentifier[] containerIdentifiers)
         {
-           // Checking loop
-            if (!_configurations.AllowDuplicateContainerNames)
-            {
-                // Holds temporary data for this batchment
-                HashSet<string> tempContainerNames = new HashSet<string>(containerIdentifiers.Length);
-                
-                foreach (var c in containerIdentifiers)
-                {
-                    if (_containerNames.Contains(c.Name) 
-                        || tempContainerNames.Contains(c.Name))
-                        throw new DuplicateNameException();
-
-                    tempContainerNames.Add(c.Name);
-                }
-            }
-            
-            // Adding loop
             foreach (var c in containerIdentifiers)
             {
                 cells.Add(c, new CellContainer());
-
-                if (!_configurations.AllowDuplicateContainerNames)
-                    _containerNames.Add(c.Name);
             }
         }
 
