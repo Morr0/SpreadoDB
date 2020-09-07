@@ -25,6 +25,7 @@
             <e p="ContainerIdentifier.cs" t="Include" />
           </e>
           <e p="Spreadsheet.cs" t="Include" />
+          <e p="SpreadsheetConfigurations.cs" t="Include" />
           <e p="StorageForm.cs" t="Include" />
         </e>
       </e>

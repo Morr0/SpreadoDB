@@ -59,5 +59,24 @@ namespace SpreadoDBLibTest
             spreadsheet2.AddContainers(containerIdentifier1, containerIdentifier2);
             
         }
+
+        [Fact]
+        public void SpreadsheetShouldAllowEditingCellAfterPuttingAValueShouldPass()
+        {
+            // Arrange
+            Spreadsheet spreadsheet = new Spreadsheet();
+            ContainerIdentifier containerIdentifier = new ContainerIdentifier();
+            IntegerCell cell = new IntegerCell(25);
+            spreadsheet.AddContainers(containerIdentifier);
+            spreadsheet.AddCell(containerIdentifier, cell);
+            int expectedValue = 2;
+            cell = new IntegerCell(expectedValue);
+            
+            // Act
+            spreadsheet.EditCell(containerIdentifier, 0, cell);
+            
+            // Assert
+            Assert.Equal(expectedValue, spreadsheet.GetCell(containerIdentifier, 0).Value);
+        }
     }
 }

@@ -89,5 +89,28 @@ namespace SpreadoDBLib.Spreadsheet
                     _containerNames.Add(c.Name);
             }
         }
+
+        /// <summary>
+        /// Edits an existing cell's value. If the cell does not exist will create it.
+        /// </summary>
+        /// <param name="containerIdentifier"></param>
+        /// <param name="index"></param>
+        /// <param name="cell"></param>
+        public void EditCell(ContainerIdentifier containerIdentifier, int index, IntegerCell cell)
+        {
+            if (!cells.ContainsKey(containerIdentifier))
+                cells.Add(containerIdentifier, new CellContainer());
+
+            cells[containerIdentifier][index] = cell;
+        }
+
+
+        public IntegerCell GetCell(ContainerIdentifier containerIdentifier, int index)
+        {
+            if (!cells.ContainsKey(containerIdentifier))
+                return null;
+
+            return cells[containerIdentifier][index] as IntegerCell;
+        }
     }
 }
