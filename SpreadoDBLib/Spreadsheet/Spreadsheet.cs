@@ -9,10 +9,10 @@ namespace SpreadoDBLib.Spreadsheet
         private SpreadsheetConfigurations _configurations;
         
         // Cells
-        private Dictionary<ContainerIdentifier, CellContainer> rows;
-        private Dictionary<ContainerIdentifier, CellContainer> columns;
+        private Dictionary<Container, CellContainer> rows;
+        private Dictionary<Container, CellContainer> columns;
         // Shortcut to fetch any of the above
-        private Dictionary<ContainerIdentifier, CellContainer> cells;
+        private Dictionary<Container, CellContainer> _cells;
 
         public Spreadsheet(SpreadsheetConfigurations configurations = null)
         {
@@ -21,60 +21,62 @@ namespace SpreadoDBLib.Spreadsheet
 
             if (configurations.StorageForm == StorageForm.ROW)
             {
-                cells = rows = new Dictionary<ContainerIdentifier, CellContainer>(configurations.InitialNoContainer);
+                _cells = rows = new Dictionary<Container, CellContainer>(configurations.InitialNoContainer);
             }
             else
             {
-                cells = columns = new Dictionary<ContainerIdentifier, CellContainer>(configurations.InitialNoContainer);
+                _cells = columns = new Dictionary<Container, CellContainer>(configurations.InitialNoContainer);
             }
         }
 
         public bool Empty()
         {
             // Cheaper than using the Cells above
-            return cells.Count == 0;
+            return _cells.Count == 0;
         }
 
-
-        public void AddCell(ContainerIdentifier containerIdentifier, SimpleCell cell)
+        public void AddCell(Container container, SimpleCell cell)
         {
-            cells.TryGetValue(containerIdentifier, out CellContainer cellContainer);
+            _cells.TryGetValue(container, out CellContainer cellContainer);
             if (cellContainer == null)
-                cells.Add(containerIdentifier, cellContainer = new CellContainer());
+                _cells.Add(container, cellContainer = new CellContainer());
 
             cellContainer.Add(cell);
         }
 
-        
-        public void AddContainers(params ContainerIdentifier[] containerIdentifiers)
+        public void AddContainers(params Container[] containerIdentifiers)
         {
             foreach (var c in containerIdentifiers)
             {
-                cells.Add(c, new CellContainer());
+                _cells.Add(c, new CellContainer());
             }
         }
 
         /// <summary>
         /// Edits an existing cell's value. If the cell does not exist will create it.
         /// </summary>
-        /// <param name="containerIdentifier"></param>
+        /// <param name="container"></param>
         /// <param name="index"></param>
         /// <param name="cell"></param>
-        public void EditCell(ContainerIdentifier containerIdentifier, int index, SimpleCell cell)
+        public void EditCell(Container container, int index, SimpleCell cell)
         {
-            if (!cells.ContainsKey(containerIdentifier))
-                cells.Add(containerIdentifier, new CellContainer());
+            if (!_cells.ContainsKey(container))
+                _cells.Add(container, new CellContainer());
 
-            cells[containerIdentifier][index] = cell;
+            _cells[container][index] = cell;
         }
-
-
-        public SimpleCell GetCell(ContainerIdentifier containerIdentifier, int index)
+        
+        public SimpleCell GetCell(Container container, int index)
         {
-            if (!cells.ContainsKey(containerIdentifier))
+            if (!_cells.ContainsKey(container))
                 return null;
 
-            return cells[containerIdentifier][index] as SimpleCell;
+            return _cells[container][index] as SimpleCell;
+        }
+
+        public IEnumerable<Container> GetContainers()
+        {
+            return _cells.Keys;
         }
     }
 }

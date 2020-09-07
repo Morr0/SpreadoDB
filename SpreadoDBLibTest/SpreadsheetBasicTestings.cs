@@ -29,14 +29,14 @@ namespace SpreadoDBLibTest
             // Arrange
             StorageForm storageForm = StorageForm.ROW;
             Spreadsheet spreadsheet = new Spreadsheet();
-            ContainerIdentifier containerIdentifier = new ContainerIdentifier("A");
+            Container container = new Container("A");
             SimpleCell cell = new SimpleCell(5);
 
             // Act
-            spreadsheet.AddCell(containerIdentifier, cell);
+            spreadsheet.AddCell(container, cell);
 
             // Assert
-            Assert.Equal(cell, spreadsheet.GetCell(containerIdentifier, 0));
+            Assert.Equal(cell, spreadsheet.GetCell(container, 0));
         }
 
         [Fact]
@@ -44,18 +44,18 @@ namespace SpreadoDBLibTest
         {
             // Arrange
             Spreadsheet spreadsheet = new Spreadsheet();
-            ContainerIdentifier containerIdentifier = new ContainerIdentifier();
+            Container container = new Container();
             SimpleCell cell = new SimpleCell(25);
-            spreadsheet.AddContainers(containerIdentifier);
-            spreadsheet.AddCell(containerIdentifier, cell);
+            spreadsheet.AddContainers(container);
+            spreadsheet.AddCell(container, cell);
             int expectedValue = 2;
             cell = new SimpleCell(expectedValue);
             
             // Act
-            spreadsheet.EditCell(containerIdentifier, 0, cell);
+            spreadsheet.EditCell(container, 0, cell);
             
             // Assert
-            Assert.Equal(expectedValue, spreadsheet.GetCell(containerIdentifier, 0).Value);
+            Assert.Equal(expectedValue, spreadsheet.GetCell(container, 0).Value);
         }
     }
 }

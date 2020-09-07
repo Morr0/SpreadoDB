@@ -2,9 +2,9 @@
 
 namespace SpreadoDBLib.Spreadsheet.Identifiers
 {
-    public struct ContainerIdentifier
+    public struct Container
     {
-        public ContainerIdentifier(string name)
+        public Container(string name)
         {
             Name = name;
             Guid = Guid.NewGuid();
