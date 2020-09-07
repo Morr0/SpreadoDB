@@ -1,7 +1,12 @@
 ﻿namespace SpreadoDBLib.Spreadsheet.Cells
 {
-    public abstract class SimpleCell<T> : ICell
+    public class SimpleCell
     {
-        public T Value { get; set; }
+        public SimpleCell(int value)
+        {
+            Value = value;
+        }
+        
+        public int Value { get; }
     }
 }

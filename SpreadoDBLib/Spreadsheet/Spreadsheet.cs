@@ -39,11 +39,6 @@ namespace SpreadoDBLib.Spreadsheet
                 _containerNames = new HashSet<string>();
             }
         }
-        
-        // Properties
-        public ImmutableDictionary<ContainerIdentifier, CellContainer> Cells 
-            => cells.ToImmutableDictionary();
-
 
         public bool Empty()
         {
@@ -52,7 +47,7 @@ namespace SpreadoDBLib.Spreadsheet
         }
 
 
-        public void AddCell(ContainerIdentifier containerIdentifier, ICell cell)
+        public void AddCell(ContainerIdentifier containerIdentifier, SimpleCell cell)
         {
             cells.TryGetValue(containerIdentifier, out CellContainer cellContainer);
             if (cellContainer == null)
@@ -96,7 +91,7 @@ namespace SpreadoDBLib.Spreadsheet
         /// <param name="containerIdentifier"></param>
         /// <param name="index"></param>
         /// <param name="cell"></param>
-        public void EditCell(ContainerIdentifier containerIdentifier, int index, IntegerCell cell)
+        public void EditCell(ContainerIdentifier containerIdentifier, int index, SimpleCell cell)
         {
             if (!cells.ContainsKey(containerIdentifier))
                 cells.Add(containerIdentifier, new CellContainer());
@@ -105,12 +100,12 @@ namespace SpreadoDBLib.Spreadsheet
         }
 
 
-        public IntegerCell GetCell(ContainerIdentifier containerIdentifier, int index)
+        public SimpleCell GetCell(ContainerIdentifier containerIdentifier, int index)
         {
             if (!cells.ContainsKey(containerIdentifier))
                 return null;
 
-            return cells[containerIdentifier][index] as IntegerCell;
+            return cells[containerIdentifier][index] as SimpleCell;
         }
     }
 }

@@ -12,8 +12,13 @@
   <component name="ChangeListManager">
     <list default="true" id="12f9dddd-e22d-433d-b717-cfa26bd79dab" name="Default Changelist" comment="Successful basic operations with unit testing">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SpreadoDB/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SpreadoDB/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.SpreadoDB/.idea/encodings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SpreadoDB/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SpreadoDB/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/CellContainer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/CellContainer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Cells/ICell.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Cells/IntegerCell.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Cells/SimpleCell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Cells/SimpleCell.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Spreadsheet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Spreadsheet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpreadoDBLibTest/SpreadsheetBasicTestings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SpreadoDBLibTest/SpreadsheetBasicTestings.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,25 +29,26 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Projects/SpreadoDB/SpreadoDB/SpreadoDBLib/Spreadsheet/Spreadsheet.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9CD23B5E-3B0C-4F80-A807-33BCFD1D82E1/3DC/List.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/SpreadoDBLib/Class1.cs" />
         <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Identifiers/IdentifierType.cs" />
-        <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Cells/ICell.cs" />
-        <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/CellContainer.cs" />
         <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Identifiers/IContainerIdentifier.cs" />
         <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/StorageForm.cs" />
-        <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Cells/SimpleCell.cs" />
         <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Cells/NumericCell.cs" />
-        <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Cells/IntegerCell.cs" />
         <option value="$PROJECT_DIR$/SpreadoDBLibTest/UnitTest1.cs" />
         <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/SpreadsheetConfigurations.cs" />
+        <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Identifiers/ContainerIdentifier.cs" />
+        <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Cells/ICell.cs" />
+        <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Cells/Cell.cs" />
+        <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Cells/IntegerCell.cs" />
+        <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Cells/SimpleCell.cs" />
+        <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/CellContainer.cs" />
         <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Spreadsheet.cs" />
         <option value="$PROJECT_DIR$/SpreadoDBLibTest/SpreadsheetBasicTestings.cs" />
-        <option value="$PROJECT_DIR$/SpreadoDBLib/Spreadsheet/Identifiers/ContainerIdentifier.cs" />
       </list>
     </option>
   </component>
@@ -78,6 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599363875984</updated>
       <workItem from="1599363878929" duration="7041000" />
+      <workItem from="1599470534329" duration="1780000" />
     </task>
     <task id="LOCAL-00001" summary="Initial constructs">
       <created>1599365390816</created>
@@ -106,7 +113,7 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -118,6 +125,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
@@ -135,10 +143,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1040@0.0.1920.1040" timestamp="1599365423837" />
-    <state x="670" y="210" key="RiderGenerateDialog" timestamp="1599365061327">
+    <state x="670" y="210" key="RiderGenerateDialog" timestamp="1599471684917">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="670" y="210" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599365061327" />
+    <state x="670" y="210" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599471684917" />
     <state x="789" y="241" key="RollbackChangesDialog" timestamp="1599380671737">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

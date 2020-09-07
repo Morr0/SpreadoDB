@@ -17,8 +17,6 @@
         <e p="Spreadsheet" t="Include">
           <e p="CellContainer.cs" t="Include" />
           <e p="Cells" t="Include">
-            <e p="ICell.cs" t="Include" />
-            <e p="IntegerCell.cs" t="Include" />
             <e p="SimpleCell.cs" t="Include" />
           </e>
           <e p="Identifiers" t="Include">
