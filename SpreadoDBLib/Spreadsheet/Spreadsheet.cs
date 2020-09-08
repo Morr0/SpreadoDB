@@ -1,33 +1,21 @@
 ﻿using System.Collections.Generic;
 using SpreadoDBLib.Spreadsheet.Cells;
-using SpreadoDBLib.Spreadsheet.Identifiers;
 
 namespace SpreadoDBLib.Spreadsheet
 {
     public class Spreadsheet
     {
-        private SpreadsheetConfigurations _configurations;
+        internal SpreadsheetConfigurations _configurations;
         
-        // Cells
-        private Dictionary<Container, CellContainer> rows;
-        private Dictionary<Container, CellContainer> columns;
-        // Shortcut to fetch any of the above
-        private Dictionary<Container, CellContainer> _cells;
+        internal Dictionary<string, CellContainer> _cells;
 
         public Spreadsheet(SpreadsheetConfigurations configurations = null)
         {
             configurations ??= new SpreadsheetConfigurations();
             _configurations = configurations;
-
-            if (configurations.StorageForm == StorageForm.ROW)
-            {
-                _cells = rows = new Dictionary<Container, CellContainer>(configurations.InitialNoContainer);
+            
+            _cells = new Dictionary<string, CellContainer>(configurations.InitialNoContainer);
             }
-            else
-            {
-                _cells = columns = new Dictionary<Container, CellContainer>(configurations.InitialNoContainer);
-            }
-        }
 
         public bool Empty()
         {
@@ -35,7 +23,7 @@ namespace SpreadoDBLib.Spreadsheet
             return _cells.Count == 0;
         }
 
-        public void AddCell(Container container, SimpleCell cell)
+        public void AddCell(string container, SimpleCell cell)
         {
             _cells.TryGetValue(container, out CellContainer cellContainer);
             if (cellContainer == null)
@@ -44,7 +32,7 @@ namespace SpreadoDBLib.Spreadsheet
             cellContainer.Add(cell);
         }
 
-        public void AddContainers(params Container[] containerIdentifiers)
+        public void AddContainers(params string[] containerIdentifiers)
         {
             foreach (var c in containerIdentifiers)
             {
@@ -52,12 +40,12 @@ namespace SpreadoDBLib.Spreadsheet
             }
         }
 
-        public IEnumerable<Container> GetContainers()
+        public IEnumerable<string> GetContainers()
         {
             return _cells.Keys;
         }
 
-        public IEnumerable<SimpleCell> GetCells(Container container)
+        public IEnumerable<SimpleCell> GetCells(string container)
         {
             if (!_cells.ContainsKey(container))
                 return null;

@@ -1,9 +1,4 @@
-using System;
-using System.Collections.Generic;
-using System.Data;
 using SpreadoDBLib.Spreadsheet;
-using SpreadoDBLib.Spreadsheet.Cells;
-using SpreadoDBLib.Spreadsheet.Identifiers;
 using Xunit;
 
 namespace SpreadoDBLibTest
