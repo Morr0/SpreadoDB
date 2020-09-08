@@ -52,31 +52,17 @@ namespace SpreadoDBLib.Spreadsheet
             }
         }
 
-        /// <summary>
-        /// Edits an existing cell's value. If the cell does not exist will create it.
-        /// </summary>
-        /// <param name="container"></param>
-        /// <param name="index"></param>
-        /// <param name="cell"></param>
-        public void EditCell(Container container, int index, SimpleCell cell)
+        public IEnumerable<Container> GetContainers()
         {
-            if (!_cells.ContainsKey(container))
-                _cells.Add(container, new CellContainer());
-
-            _cells[container][index] = cell;
+            return _cells.Keys;
         }
-        
-        public SimpleCell GetCell(Container container, int index)
+
+        public IEnumerable<SimpleCell> GetCells(Container container)
         {
             if (!_cells.ContainsKey(container))
                 return null;
 
-            return _cells[container][index] as SimpleCell;
-        }
-
-        public IEnumerable<Container> GetContainers()
-        {
-            return _cells.Keys;
+            return _cells[container]._cells;
         }
     }
 }

@@ -19,11 +19,12 @@
           <e p="Cells" t="Include">
             <e p="SimpleCell.cs" t="Include" />
           </e>
-          <e p="Identifiers" t="Include">
-            <e p="ContainerIdentifier.cs" t="Include" />
+          <e p="Containers" t="Include">
+            <e p="Container.cs" t="Include" />
           </e>
           <e p="Spreadsheet.cs" t="Include" />
           <e p="SpreadsheetConfigurations.cs" t="Include" />
+          <e p="SpreadsheetConverter.cs" t="Include" />
           <e p="StorageForm.cs" t="Include" />
         </e>
       </e>
@@ -38,6 +39,7 @@
         </e>
         <e p="SpreadoDBLibTest.csproj" t="IncludeRecursive" />
         <e p="SpreadsheetBasicTestings.cs" t="Include" />
+        <e p="SpreadsheetConverterTestings.cs" t="Include" />
       </e>
     </e>
     <e p="C:\Users\Rami\.nuget\packages\microsoft.net.test.sdk\16.5.0\build\netcoreapp2.1" t="Include">
